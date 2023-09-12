@@ -1,4 +1,32 @@
 # Challenge_11_Web_Scraping and Data Analysis. Mars.
+Findings about planet Mars.
+_______________
+There are 12 months.  
+A Martian Day is called 'Sol'.  1867 sols worth of data were looked at in this analysis. 
+March is the coldest month with an average lowerst monthly temperature of -83.31. 
+August is the warmest month with an average monthly temperature of -68.38.
+Atmospheric pressure is the lowest in the month of June, and highest in the month of September
+A year on Mars appears to be about 675 days from the 'terrestrial date vs temperature plot. Internet search confirms that a Mars year is equivalent to 687 earth (The distance from peak to peak is roughly 1425-750, or 675 days.)
+Mars data from the website https://static.bc-edx.com/data/web/mars_facts/temperature.html written to a csv file. 
+_______________
+Part 1: Scrape Titles and Preview Text from Mars News 
+•	Automated browsing (with Splinter) was used to visit the Mars news site, and the HTML code was extracted (with Beautiful Soup). 
+•	The titles and preview text of the news articles were scraped and extracted. 
+•	The scraped information was stored in the specified Python data structure—specifically, a list of dictionaries. 
+
+Part 2: Scrape and Analyze Mars Weather Data 
+•	The HTML table was extracted into a Pandas DataFrame. Splinter and Beautiful Soup were used to scrape the data. The columns have the correct headings and data types. 
+•	The data was analyzed to answer the following questions: 
+o	How many months exist on Mars? 12
+o	How many Martian days' worth of data are there? 1867
+•	The data was analyzed to answer the following questions, and a data visualization was created to support each answer
+o	Which month, on average, has the lowest temperature? The highest? March has the lowest; August has the highest. 
+o	Which month, on average, has the lowest atmospheric pressure? The highest?  June has the lowest; September the highest. 
+o	How many terrestrial days exist in a Martian year? A visual estimate within 25% was made. Approximately 675 days. 
+•	The DataFrame was exported into a CSV file named mars_data_csv. 
+_______________
+
+Instructions: 
 Background
 You’re now ready to take on a full web-scraping and data analysis project. You’ve learned to identify HTML elements on a page, identify their id and class attributes, and use this knowledge to extract information via both automated browsing with Splinter and HTML parsing with Beautiful Soup. You’ve also learned to scrape various types of information. These include HTML tables and recurring elements, like multiple news articles on a webpage.
 As you work on this Challenge, remember that you’re strengthening the same core skills that you’ve been developing until now: collecting data, organizing and storing data, analyzing data, and then visually communicating your insights.
@@ -50,19 +78,5 @@ o	About how many terrestrial (Earth) days exist in a Martian year? To answer thi
 	Consider how many days elapse on Earth in the time that Mars circles the Sun once.
 	Visually estimate the result by plotting the daily minimum temperature.
 6.	Export the DataFrame to a CSV file.
-Requirements
-Part 1: Scrape Titles and Preview Text from Mars News (40 points)
-•	Automated browsing (with Splinter) was used to visit the Mars news site, and the HTML code was extracted (with Beautiful Soup). (10 points)
-•	The titles and preview text of the news articles were scraped and extracted. (20 points)
-•	The scraped information was stored in the specified Python data structure—specifically, a list of dictionaries. (10 points)
-Part 2: Scrape and Analyze Mars Weather Data (60 points)
-•	The HTML table was extracted into a Pandas DataFrame. Either Pandas or Splinter and Beautiful Soup were used to scrape the data. The columns have the correct headings and data types. (15 points)
-•	The data was analyzed to answer the following questions: (10 points)
-o	How many months exist on Mars? (5 points)
-o	How many Martian days' worth of data are there? (5 points)
-•	The data was analyzed to answer the following questions, and a data visualization was created to support each answer: (30 points)
-o	Which month, on average, has the lowest temperature? The highest? (10 points)
-o	Which month, on average, has the lowest atmospheric pressure? The highest? (10 points)
-o	How many terrestrial days exist in a Martian year? A visual estimate within 25% was made. (10 points)
-•	The DataFrame was exported into a CSV file. (5 points)
+
 
